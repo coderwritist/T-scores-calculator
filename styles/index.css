@@ -1,0 +1,32 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body
+{
+    font-family: Poppins, sans-serif;
+    line-height: 1.55;
+    background-color:#3C3A47;
+}
+
+button
+{
+    width:15rem;
+    height:5rem;
+    border-radius: 5px;
+    border:none;
+    background-color:aliceblue;
+    font-size:2rem;
+}
+
+.btn
+{
+    display: grid;
+    grid-template-columns:15rem;
+    gap: 10rem;
+    justify-content:center;
+    padding-top: 15%;
+
+}
