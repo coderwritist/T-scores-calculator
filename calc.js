@@ -15,7 +15,8 @@ for(let i = 0; i<tab.length; i+= 2)
     console.log(cat)
     var option = document.createElement("option");
     option.id = cat;
-    option.value = cat;
+    option.value = cat
+    option.className = "category-dropdown";
     option.text = cat;
     selectList.appendChild(option);
 }

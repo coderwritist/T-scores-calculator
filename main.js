@@ -8,6 +8,10 @@ const ipc = electron.ipcMain
 const dialog = electron.dialog
 let win;
 
+require('electron-reload')(__dirname, {
+    electron: path.join(__dirname, 'node_modules', '.bin', 'electron')
+  });
+
 function createWindow()
 {
     win = new BrowserWindow({
@@ -19,7 +23,7 @@ function createWindow()
     });
     win.setMenuBarVisibility(false)
     win.loadURL(url.format({
-        pathname: path.join(__dirname, 'index.html'),
+        pathname: path.join(__dirname, 'calc.html'),
         protocol: 'file:',
         slashes: true
       }));
