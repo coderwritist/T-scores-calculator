@@ -41,6 +41,10 @@ ipc.on("errdialog", function(event){
     dialog.showErrorBox("Invalid operation", "Empty fields are not accepted")
 })
 
+ipc.on("errdialogsex", function(event){
+    dialog.showErrorBox("Invalid operation", "Select sex to calculate")
+})
+
 app.on('ready', createWindow);
 
 app.on("window-all-closed", ()=>

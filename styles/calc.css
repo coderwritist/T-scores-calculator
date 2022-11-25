@@ -15,7 +15,7 @@ body
   cursor: pointer;
   display: inline-block;
   font-family: -apple-system,system-ui,"Segoe UI","Liberation Sans",sans-serif;
-  font-size: 13px;
+  font-size: 20px;
   font-weight: 400;
   line-height: 1.15385;
   margin: 0;
@@ -53,24 +53,60 @@ body
 .sex-block
 {
     display: flex;
+    padding-top: 30px;
 }
 .sex-content{
-    margin-top: 25px;
+    margin-top: 10px;
     margin-left: 20px;
     display: flex;
 }
-.sex-select:hover{
-    cursor: pointer
+.sex-select{
+  margin-right: 10px;
 }
 .category
 {
     display: flex;
+    padding-top: 30px;
 }
-
 select
 {
-    margin-top: 25px;
+    margin-top: 10px;
     margin-bottom: 30px;
     margin-left: 20px;
     padding: 5px;
+}
+#pricing
+{
+  padding-top: 50px;
+}
+.whole-body-card
+{
+  /* max-width: 60%; */
+}
+#whole14{
+  padding-top: 20px;
+}
+.whole-body{
+  padding-top: 30px;
+}
+
+.submit-btn
+{
+  padding-top: 30px;
+  padding-left: 45%;
+}
+
+
+/*Input */
+input{
+  max-width: 40%;
+}
+
+#line1{
+  display: flex;
+  padding-bottom: 15px;
+}
+#ans1
+{
+  padding-left: 10px;
 }

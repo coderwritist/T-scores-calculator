@@ -1,4 +1,7 @@
-let tab = require("./data.json") 
+var tab = require("./data.json")
+const electron = require("electron")
+const ipc = electron.ipcRenderer
+
 
 
 
@@ -79,7 +82,7 @@ function calculate()
         console.log(qq.value)
         var ans = (qq.value - fromtab.bmd)/fromtab.sd
         
-        anshtml.innerText = ans;
+        anshtml.innerText = ans.toFixed(4);
 
     }
 
@@ -87,5 +90,12 @@ function calculate()
 }
 
 const subbut = document.getElementById("subbut")
-subbut.addEventListener("click", calculate)
+
+subbut.addEventListener("click", function(){
+    const tempsex = document.querySelector( 'input[name="sex"]:checked')
+    if(tempsex != null)
+        calculate()
+    else
+        ipc.send("errdialogsex")
+})
 
