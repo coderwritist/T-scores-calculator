@@ -73,7 +73,7 @@ function calculate()
         if(qq.value === "")
         {
             console.log(qq.value)
-            anshtml.innerText = "Value Not given"
+            anshtml.innerText = "Result: Value Not given"
             continue
         }
         
@@ -82,7 +82,7 @@ function calculate()
         console.log(qq.value)
         var ans = (qq.value - fromtab.bmd)/fromtab.sd
         
-        anshtml.innerText = ans.toFixed(4);
+        anshtml.innerText = "Result: "+ans.toFixed(4);
 
     }
 

@@ -129,6 +129,7 @@ function writeper()
     }
     var butdel = document.createElement("button")
     butdel.id = "butdel"
+    butdel.className="button-8"
     butdel.innerHTML = "DELETE!"
     butdel.style.display = "none"
     myParent.appendChild(butdel);

@@ -2,6 +2,7 @@
 body
 {
     margin:30px;
+    
 }
 
 /*button*/
@@ -81,7 +82,7 @@ select
 }
 .whole-body-card
 {
-  /* max-width: 60%; */
+  max-width: 100%;
 }
 #whole14{
   padding-top: 20px;
@@ -96,17 +97,46 @@ select
   padding-left: 45%;
 }
 
-
-/*Input */
-input{
-  max-width: 40%;
+.result{
+  background: rgb(208, 203, 203);
+  max-width: 50%;
+}
+.result-wholebody{
+  background: rgb(208, 203, 203);
+  max-width: 200px;
 }
 
-#line1{
+.lines{
+  padding-bottom: 25px;
+}
+
+.lines > label{
+  width: 150px;
+}
+
+hr
+{
+    background-color: #eee;
+    border: 0 none;
+    color: #eee;
+    height: 1px;
+}
+
+
+
+
+
+
+
+
+
+/*Input */
+
+/* #line1{
   display: flex;
   padding-bottom: 15px;
 }
 #ans1
 {
   padding-left: 10px;
-}
+} */

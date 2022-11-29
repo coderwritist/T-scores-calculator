@@ -4,25 +4,204 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/update.css">
     <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </head>
 <body>
-    <a href="calc.html"><button>Back</button></a>
-    <div id = "radio">
+    <a href="calc.html"><button class="button-8">Back</button></a>
+    <div class="radio" id = "radio">
         <h2>Mode: </h2>
         <input type="radio" id="modea" name="mode" value = "a">
-        <label for="modea">Add</label>
+        <label class="radio-options" for="modea">Add</label>
         <input type="radio" id="modeu" name="mode" value = "u">
-        <label for="modeu">Update</label>
+        <label class="radio-options" for="modeu">Update</label>
         <input type="radio" id="moded" name="mode" value = "d">
         <label for="moded">Delete</label> 
     </div>
     <div id = "Hidden">
-        <div id = "category1">
-            <label for="category"><h1>Category name: </h1></label>
-            <input type="text" id="category" name="category">
+        <div class="category1" id = "category1">
+            <div class="category-label">
+                <label for="category"><h2>Category Name: </h2></label>
+                <div class="cat-input">
+                    <input class="category-input"  type="text" id="category" name="category">
+                </div>
+                
+            </div>
         </div>
-        <h1>MALE</h1>
+        <h1 class="male-heading">MALE</h1>
+        <section class="male-section"  id="pricing">
+            <div class="row">
+              <div class="pricing-column col-lg-4 col-md-6">
+                <div class="card">
+                  <div class="card-header">
+                    <h2>Hip-</h2>
+                  </div>
+                  <div class="card-body">
+                    <div class="lines" id = "line1">
+                        <label for="m-Neck">Neck</label>
+                        <input class="box" type="text" id="m-Neck" name="Neck" defaultValue = "">
+                        <input class="box" type="text" id="sdm-Neck" name="Neck" defaultValue = "">
+                        <!-- <label for="Neck">Neck:</label>
+                        <input type="text" name="Neck" id="Neck" defaultValue = "">
+                        <p class="result" id = "ans1"></p>    -->
+                        <hr>                         
+                    </div>
+                    <div class="lines" id = "line2">
+                        <label for="m-Trochenta">Trochenta</label>
+                        <input class="box" type="text" id="m-Trochenta" name="Trochenta" defaultValue = "">
+                        <input class="box" type="text" id="sdm-Trochenta" name="Trochenta" defaultValue = "">
+                        <!-- <label for="Trochenta">Trochenta:</label>
+                        <input type="text" name="Trochenta" id="Trochenta" defaultValue = "">
+                        <p class="result" id = "ans2"></p> -->
+                        <hr>
+                    </div>
+                    <div class="lines" id = "line3">
+                        <label for="Intertrochenta">Intertrochenta</label>
+                        <input class="box" type="text" id="m-Intertrochenta" name="Intertrochenta" defaultValue = "">
+                        <input class="box" type="text" id="sdm-Intertrochenta" name="Intertrochenta" defaultValue = "">
+                        <!-- <label for="Intertrochenta">Intertrochenta:</label>
+                        <input type="text" name="Intertrochenta" id="Intertrochenta" defaultValue = "">
+                        <p class="result" id = "ans3"></p> -->
+                        <hr>
+                    </div>
+                    <div class="lines" id = "line4">
+                        <label for="Hip">Hip</label>
+                        <input class="box" type="text" id="m-Hip" name="Hip" defaultValue = "">
+                        <input class="box" type="text" id="sdm-Hip" name="Hip" defaultValue = "">
+                        <!-- <label for="Hip">Hip:</label>
+                        <input type="text" name="Hip" id="Hip" defaultValue = "">
+                        <p class="result" id = "ans4"></p>
+                        <hr> -->
+                    </div>
+                  </div>
+                </div>
+        
+              </div>
+              <div class="pricing-column col-lg-4 col-md-6">
+                <div class="card">
+                  <div class="card-header">
+                    <h2>Forearm-</h2>
+                </div>
+                  <div class="card-body">
+                    <div class="lines" id = "line5">
+                        <!-- <label for="1/3">1/3:</label>
+                        <input type="text" name="1/3" id="1/3" defaultValue = "">
+                        <p class="result" id = "ans5"></p> -->
+                        <label for="1/3">1/3</label>
+                        <input class="box" type="text" id="m-1/3" name="1/3" defaultValue = "">
+                        <input class="box" type="text" id="sdm-1/3" name="1/3" defaultValue = "">
+                        <hr>
+                    </div>
+                    <div class="lines" id = "line6">
+                        <!-- <label for="Mid">Mid:</label>
+                        <input type="text" name="Mid" id="Mid" defaultValue = "">
+                        <p class="result" id = "ans6"></p> -->
+                        <label for="Mid">Mid</label>
+                        <input class="box" type="text" id="m-Mid" name="Mid" defaultValue = "">
+                        <input class="box" type="text" id="sdm-Mid" name="Mid" defaultValue = "">
+        
+                        <hr>
+                    </div>
+                    <div class="lines" id = "line7">
+                        <label for="UD">UD</label>
+                        <input class="box" type="text" id="m-UD" name="UD">
+                        <input class="box" type="text" id="sdm-UD" name="UD">
+                        <!-- <label for="UD">UD:</label>
+                        <input type="text" name="UD" id="UD" defaultValue = "">
+                        <p class="result" id = "ans7"></p> -->
+
+                        <hr>
+                    </div>
+                    <div class="lines" id = "line8">
+                        <label for="Forearm">Forearm</label>
+                        <input class="box" type="text" id="m-Forearm" name="Forearm" defaultValue = "">
+                        <input class="box" type="text" id="sdm-Forearm" name="Forearm" defaultValue = "">
+                        <!-- <label for="Forearm">Forearm:</label>
+                        <input type="text" name="Forearm" id="Forearm" defaultValue = "">
+                        <p class="result" id = "ans8"></p> -->
+
+                        <hr>
+                    </div>
+                  </div>
+                </div>
+        
+              </div>
+              <div class="pricing-column col-lg-4 col-md-12">
+                <div class="card">
+                  <div class="card-header">
+                    <h2>Spine-</h2>
+                  </div>
+                  <div class="card-body">
+                    <div class="lines" id = "line9">
+                        <!-- <label for="L1">L1:</label>
+                        <input type="text" name="L1" id="L1" defaultValue = "">
+                        <p class="result" id = "ans9"></p> -->
+                        <label for="L1">L1</label>
+                        <input class="box" type="text" id="m-L1" name="L1" defaultValue = "">
+                        <input class="box" type="text" id="sdm-L1" name="L1" defaultValue = "">
+
+                        <hr>
+                    </div>
+                    <div class="lines" id = "line10">
+                        <!-- <label for="L2">L2:</label>
+                        <input type="text" name="L2" id="L2" defaultValue = "">
+                        <p class="result" id = "ans10"></p> -->
+                        <label for="L2">L2</label>
+                        <input class="box" type="text" id="m-L2" name="L2" defaultValue = "">
+                        <input class="box" type="text" id="sdm-L2" name="L2" defaultValue = "">
+
+
+                        <hr>
+                    </div>
+                    <div class="lines" id = "line11">
+                        <!-- <label for="L3">L3:</label>
+                        <input type="text" name="L3" id="L3" defaultValue = "">
+                        <p class="result" id = "ans11"></p> -->
+                        <label for="L3">L3</label>
+                        <input class="box" type="text" id="m-L3" name="L3" defaultValue = "">
+                        <input class="box" type="text" id="sdm-L3" name="L3" defaultValue = "">
+
+                        <hr>
+                    </div>
+                    <div class="lines" id = "line12">
+                        <!-- <label for="L4">L4:</label>
+                        <input type="text" name="L4" id="L4" defaultValue = "">
+                        <p class="result" id = "ans12"></p> -->
+                        <label for="L4">L4</label>
+                        <input class="box" type="text" id="m-L4" name="L4" defaultValue = "">
+                        <input class="box" type="text" id="sdm-L4" name="L4" defaultValue = "">
+                        <hr>
+                    </div>
+                    <div class="lines" id = "line13">
+                        <!-- <label for="Spine">Spine:</label>
+                        <input type="text" name="Spine" id="Spine" defaultValue = "">
+                        <p class="result" id = "ans13"></p> -->
+                        <label for="Spine">Spine</label>
+                        <input class="box" type="text" id="m-Spine" name="Spine" defaultValue = "">
+                        <input class="box" type="text" id="sdm-Spine" name="Spine" defaultValue = "">
+                        <hr>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="whole-body">
+                <div class="card-header whole-body-card">
+                    <div class="lines" id = 'whole14'>
+                        <!-- <label for="Wholebody">Wholebody:</label>
+                        <input type="text" name="Wholebody" id="Wholebody" defaultValue = "">
+                        <p class="result-wholebody" id = "ans14"></p> -->
+                        <label for="Wholebody">Wholebody</label>
+                        <input class="box" type="text" id="m-Wholebody" name="Wholebody" defaultValue = "">
+                        <input class="box" type="text" id="sdm-Wholebody" name="Wholebody" defaultValue = "">
+                    </div>
+                </div>
+            </div>
+          </section>
+<!-- 
+
         <h2>HIP</h2>
         <label for="m-Neck">Neck</label>
         <input type="text" id="m-Neck" name="Neck" defaultValue = "">
@@ -72,9 +251,147 @@
         <h2>Wholebody</h2>
         <label for="Wholebody">Wholebody</label>
         <input type="text" id="m-Wholebody" name="Wholebody" defaultValue = "">
-        <input type="text" id="sdm-Wholebody" name="Wholebody" defaultValue = "">
+        <input type="text" id="sdm-Wholebody" name="Wholebody" defaultValue = ""> -->
 
-        <h1>FEMALE</h1>
+        <h1 class="male-heading">FEMALE</h1>
+        <section class="female-section" id="pricing">
+            <div class="row">
+              <div class="pricing-column col-lg-4 col-md-6">
+                <div class="card">
+                  <div class="card-header">
+                    <h2>Hip-</h2>
+                  </div>
+                  <div class="card-body">
+                    <div class="lines" id = "line1">
+                        <label for="Neck">Neck</label>
+                        <input class="box" type="text" id="f-Neck" name="Neck" defaultValue = "">
+                        <input class="box" type="text" id="sdf-Neck" name="Neck" defaultValue = "">
+        
+                        <hr>                         
+                    </div>
+                    <div class="lines" id = "line2">
+                        <label for="Trochenta">Trochenta</label>
+                        <input class="box" type="text" id="f-Trochenta" name="Trochenta" defaultValue = "">
+                        <input class="box" type="text" id="sdf-Trochenta" name="Trochenta" defaultValue = "">
+                        
+                        <hr>
+                    </div>
+                    <div class="lines" id = "line3">
+                        <label for="Intertrochenta">Intertrochenta</label>
+                        <input class="box" type="text" id="f-Intertrochenta" name="Intertrochenta" defaultValue = "">
+                        <input class="box" type="text" id="sdf-Intertrochenta" name="Intertrochenta" defaultValue = "">
+                        
+                        <hr>
+                    </div>
+                    <div class="lines" id = "line4">
+                        <label for="Hip">Hip</label>
+                        <input class="box" type="text" id="f-Hip" name="Hip" defaultValue = "">
+                        <input class="box" type="text" id="sdf-Hip" name="Hip" defaultValue = "">
+                        
+                    </div>
+                  </div>
+                </div>
+        
+              </div>
+              <div class="pricing-column col-lg-4 col-md-6">
+                <div class="card">
+                  <div class="card-header">
+                    <h2>Forearm-</h2>
+                </div>
+                  <div class="card-body">
+                    <div class="lines" id = "line5">
+                        
+                        <label for="1/3">1/3</label>
+                        <input class="box" type="text" id="f-1/3" name="1/3" defaultValue = "">
+                        <input class="box" type="text" id="sdf-1/3" name="1/3" defaultValue = "">
+                        <hr>
+                    </div>
+                    <div class="lines" id = "line6">
+                    
+                        <label for="f-Mid">Mid</label>
+                        <input class="box" type="text" id="f-Mid" name="Mid" defaultValue = "">
+                        <input class="box" type="text" id="sdf-Mid" name="Mid" defaultValue = "">
+                        <hr>
+                    </div>
+                    <div class="lines" id = "line7">
+                        <label for="UD">UD</label>
+                        <input class="box" type="text" id="f-UD" name="UD" defaultValue = "">
+                        <input class="box" type="text" id="sdf-UD" name="UD" defaultValue = "">
+                        <hr>
+                    </div>
+                    <div class="lines" id = "line8">
+                        <label for="Forearm">Forearm</label>
+                        <input class="box" type="text" id="f-Forearm" name="Forearm" defaultValue = "">
+                        <input class="box" type="text" id="sdf-Forearm" name="Forearm" defaultValue = "">
+
+                        <hr>
+                    </div>
+                  </div>
+                </div>
+        
+              </div>
+              <div class="pricing-column col-lg-4 col-md-12">
+                <div class="card">
+                  <div class="card-header">
+                    <h2>Spine-</h2>
+                  </div>
+                  <div class="card-body">
+                    <div class="lines" id = "line9">
+                    
+                        <label for="L1">L1</label>
+                        <input class="box" type="text" id="f-L1" name="L1" defaultValue = "">
+                        <input class="box" type="text" id="sdf-L1" name="L1" defaultValue = "">
+                        <hr>
+                    </div>
+                    <div class="lines" id = "line10">
+                        <label for="L2">L2</label>
+                        <input class="box" type="text" id="f-L2" name="L2" defaultValue = "">
+                        <input class="box" type="text" id="sdf-L2" name="L2" defaultValue = "">
+
+                        <hr>
+                    </div>
+                    <div class="lines" id = "line11">
+                        <label for="L3">L3</label>
+                        <input class="box" type="text" id="f-L3" name="L3" defaultValue = "">
+                        <input class="box" type="text" id="sdf-L3" name="L3" defaultValue = "">
+                        <hr>
+                    </div>
+                    <div class="lines" id = "line12">
+                        <label for="L4">L4</label>
+                        <input class="box" type="text" id="f-L4" name="L4" defaultValue = "">
+                        <input class="box" type="text" id="sdf-L4" name="L4" defaultValue = "">
+                        <hr>
+                    </div>
+                    <div class="lines" id = "line13">
+                        <label for="Spine">Spine</label>
+                        <input class="box" type="text" id="f-Spine" name="Spine" defaultValue = "">
+                        <input class="box" type="text" id="sdf-Spine" name="Spine" defaultValue = "">
+                        <hr>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="whole-body">
+                <div class="card-header whole-body-card">
+                    <div class="lines" id = 'whole14'>
+                        <label for="Wholebody">Wholebody</label>
+                        <input class="box" type="text" id="f-Wholebody" name="Wholebody" defaultValue = "">
+                        <input class="box" type="text" id="sdf-Wholebody" name="Wholebody" defaultValue = "">
+                
+                    </div>
+                </div>
+            </div>
+            <div class="submit-btn">
+                <button class="button-8 " id = "sub">Submit</button>
+            </div>
+            <div class="submit-btn">
+                <button class="button-8 " id = "sub1">Submit</button>
+            </div>            
+          </section>
+
+
+<!-- 
         <h2>HIP</h2>
         <label for="Neck">Neck</label>
         <input type="text" id="f-Neck" name="Neck" defaultValue = "">
@@ -135,10 +452,12 @@
         <h2>Wholebody</h2>
         <label for="Wholebody">Wholebody</label>
         <input type="text" id="f-Wholebody" name="Wholebody" defaultValue = "">
-        <input type="text" id="sdf-Wholebody" name="Wholebody" defaultValue = "">
+        <input type="text" id="sdf-Wholebody" name="Wholebody" defaultValue = ""> -->
 
-        <button id = "sub">Submit</button>
-        <button id = "sub1">Submit</button>
+        <!-- <div class="btn"> -->
+            <!-- <button class="button-8" id = "sub1">Submit</button> -->
+        <!-- </div> -->
+        
     </div>
     <script>
         document.getElementById("Hidden").style.display = "none";
